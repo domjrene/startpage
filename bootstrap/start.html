@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="https://rene.plus/img/home-outline.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+
+    body {
+      background-color: #4C566A !important;
+    }
+
+    ion-icon {
+      font-size: 48px;
+    }
+
+    .card{
+      height:150px;
+      width:200px;
+      border-radius: 1%;
+      box-shadow: 0 5px 5px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+
+    .card:hover{
+     transform: scale(1.05);
+     box-shadow: 0 10px 10px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 500;
+    }
+
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      color: #E5E9F0 !important;
+      font-weight: 900;
+    }
+
+    .bg-secondary {
+      background-color: #D8DEE9 !important;
+    }
+
+    a:link {
+      color: #2E3440 !important;
+    }
+    a:visited {
+      color: #4C566A !important;
+    }
+    a:hover {
+      color: white !important;
+    }
+    a:active {
+      color: #ECEFF4 !important;
+    }
+
+    .btn-danger {
+      color: #BF616A !important;
+      width: 100px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      color: #E5E9F0 !important;
+      border: 0;
+    }
+
+    .btn-success {
+      color: #A3BE8C !important;
+      width: 100px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      color: #E5E9F0 !important;
+      border: 0;
+    }
+
+    input[type=text] {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .help {cursor: help;}
+
+  </style>
+
+</head>
+
+<body>
+
+      <div class="container">
+        <div class="row p-3">
+          <div class="col-lg-6 text-left">
+            <h1>
+              <script>
+                var currentDate = new Date(),
+                    day = currentDate.getDate(),
+                    month = currentDate.getMonth() + 1,
+                    year = currentDate.getFullYear();
+                document.write(day + "-" + month + "-" + year)
+              </script>
+            </h1>
+          </div>
+          <div class="col-lg-6 text-right">
+            <h1>
+              <script>
+                var currentTime = new Date(),
+                    hours = currentTime.getHours(),
+                    minutes = currentTime.getMinutes();
+
+                if (minutes < 10) {
+                 minutes = "0" + minutes;
+                }
+
+                document.write(hours + ":" + minutes)
+              </script>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row p-3">
+          <div class="col-lg-2"></div>
+
+          <div class="col-lg-8 text-center">
+            <form action="https://www.startpage.com/sp/search?query=%s" class="searchform" method="get" name="searchform">
+            <input name="sitesearch" type="hidden">
+            <input autocomplete="on" class="form-control search help" name="q" placeholder="Search Startpage" required="required"  type="text">
+              <button class="button btn-success float-left mt-2 b-2" type="submit">Search</button>
+              <button class="button btn-danger float-right mt-2 b-2" type="reset">Clear</button>
+            </form>
+          </div>
+
+          <div class="col-lg-2"></div>
+        </div>
+      </div>
+
+        <div class="container">
+          <div class="row p-3">
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">Google Maps<br><br>
+                    <a href="https://www.google.co.uk/maps" class="stretched-link"><ion-icon name="map-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">Google Drive<br><br>
+                    <a href="https://drive.google.com/drive/u/0/my-drive" class="stretched-link"><ion-icon name="archive-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">Google Docs<br><br>
+                    <a href="https://docs.new" class="stretched-link"><ion-icon name="document-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">Google Sheets<br><br>
+                    <a href="https://sheets.new" class="stretched-link"><ion-icon name="calculator-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row p-3">
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">BBC News<br><br>
+                    <a href="https://www.bbc.co.uk/news" class="stretched-link"><ion-icon name="newspaper-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">BBC Football<br><br>
+                    <a href="https://www.bbc.co.uk/sport/football" class="stretched-link"><ion-icon name="football-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">Wikipedia<br><br>
+                    <a href="https://en.wikipedia.org" class="stretched-link"><ion-icon name="book-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">Fantasy Football<br><br>
+                    <a href="https://fantasy.premierleague.com" class="stretched-link"><ion-icon name="game-controller-outline"></a>
+                    </ion-icon></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-3">
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">Topcashback<br><br>
+                    <a href="http://topcashback.co.uk/home" class="stretched-link"><ion-icon name="wallet-outline"></ion-icon></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">eBay<br><br>
+                    <a href="https://www.ebay.co.uk/myb/Summary" class="stretched-link"><ion-icon name="card-outline"></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">Autotrader<br><br>
+                    <a href="https://www.autotrader.co.uk" class="stretched-link"><ion-icon name="car-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text">Amazon<br><br>
+                    <a href="https://smile.amazon.co.uk" class="stretched-link"><ion-icon name="logo-amazon"></ion-icon></a></p>
+                </div>
+              </div>
+              </div>
+            </div>
+
+          <div class="row p-3">
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">All 4<br><br>
+                    <a href="http://www.channel4.com/" class="stretched-link"><ion-icon name="tv-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">BBC iPlayer<br><br>
+                    <a href="https://www.bbc.co.uk/iplayer" class="stretched-link"><ion-icon name="play-outline"></ion-icon></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">Disney+<br><br>
+                    <a href="http://disneyplus.com/en-gb/" class="stretched-link"><ion-icon name="film-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">Netflix<br><br>
+                    <a href="http://netflix.com/browse" class="stretched-link"><ion-icon name="videocam-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-3">
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">BCS<br><br>
+                    <a href="https://www.cartography.org.uk/" class="stretched-link"><ion-icon name="globe-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">Wix<br><br>
+                    <a href="http://wix.com/" class="stretched-link"><ion-icon name="code-slash-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">membermojo<br><br>
+                    <a href="https://membermojo.co.uk/cartography/settings" class="stretched-link"><ion-icon name="people-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card text-center bg-secondary">
+                <div class="card-body">
+                  <p class="card-text pt-3">rene.plus<br><br>
+                    <a href="https://hpanel.hostinger.com/hosting/rene.plus/" class="stretched-link"><ion-icon name="browsers-outline"></ion-icon></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+</body>
+</html>
